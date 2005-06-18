@@ -1,5 +1,5 @@
 package Class::DBI::Loader::mysql::Grok;
-our $VERSION = '0.15';
+our $VERSION = '0.16';
 
 package Class::DBI::Loader::mysql;
 use strict;
@@ -140,6 +140,12 @@ When we're working with a mapping table like Music::StyleRef in the Class::DBI
 perldoc, which maps a many-to-many relationship, the mapping table name 
 must =~ /_ref$/i, and the columns in that table must be named after the 
 tables to which they refer.
+
+=item might_have
+
+The liner_notes table's primary key is named 'cd'. Since that's so, and the table
+name (liner_notes) !~ /_ref$/i:
+Music::Cd->might_have(liner_notes_notes => Music::LinerNotes => 'notes');
 
 =item Time::Piece support
 
