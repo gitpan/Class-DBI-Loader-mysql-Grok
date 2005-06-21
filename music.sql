@@ -13,6 +13,7 @@ CREATE TABLE cd (
 	reldate	date not null
 );
 INSERT INTO cd (artist,title,reldate) VALUES (1,'First', '2001-01-01');
+INSERT INTO cd (artist,title,reldate) VALUES (1,'Second','2001-02-02');
 
 DROP TABLE IF EXISTS liner_notes;
 CREATE TABLE liner_notes (

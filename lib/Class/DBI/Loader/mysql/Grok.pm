@@ -1,5 +1,5 @@
 package Class::DBI::Loader::mysql::Grok;
-our $VERSION = '0.16';
+our $VERSION = '0.19';
 
 package Class::DBI::Loader::mysql;
 use strict;

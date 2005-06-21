@@ -1,5 +1,14 @@
 Revision history for Perl extension Class::DBI::Loader::mysql::Grok.
 
+0.19  Tue Jun 21 2005
+	- better testing
+
+0.18  Mon Jun 20 2005
+	- added prereq CDBI::mysql to Makefile.PL
+
+0.17  Mon Jun 20 2005
+	- added false might_have test
+
 0.14  Thu Jun 16 2005
 	- added music_end.sql
     - first release candidate
